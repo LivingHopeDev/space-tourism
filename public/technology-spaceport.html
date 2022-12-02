@@ -1,32 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <script src="js/script.js" defer></script>
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+<body class="techBody">
 
-  03 Space launch 101
+  <header>
+    <nav class="relative mx-auto px-8 mt-6 md:mt-10">
+      <div class="flex justify-between">
+        <!-- logo -->
+        <div class="flex items-center">
+          <img src="assets/shared/logo.svg" class="bg-white rounded-full" alt="logo">
+        </div>
+        <!-- mobile menu -->
+        <div class="fixed navToggle text-white top-8 right-10 z-50 sm:hidden md:hidden" aria-expanded="false">
+          <img src="./assets/shared/icon-hamburger.svg" alt="open-icon" class="open" onclick="hidOpenIcon()">
+          <img src="./assets/shared/icon-close.svg" alt="close-icon" class="close hidden" onclick="hidCloseIcon()">
 
-  1
-  2
-  3
+        </div>
 
-  The terminology...
-  Spaceport
+        <div
+          class="fixed nav text-xl flex flex-col top-0 bottom-0 right-0 left-18 pt-48 pr-32 pl-10 gap-y-8 bg-darkBg backdrop-blur-md z-40 sm:hidden md:hidden"
+          data-visible="false">
+          <a href="index.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">00</span>
+            Home</a>
 
-  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
-  by analogy to the seaport for ships or airport for aircraft. Based in the 
-  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
-  of the Earth’s rotation for launch.
+          <a href="destination-moon.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">01</span> Destination
+          </a>
+          <a href="crew-commander.html" class="text-darkGrayishBlue "><span
+              class="aria-hidden text-white sm:hidden md:inline-block">02</span>
+            Crew
+
+          </a>
+          <a href="#" class="text-darkGrayishBlue active"><span
+              class="aria-hidden text-white sm:hidden md:inline-block">03</span>
+            Technology
+          </a>
+
+        </div>
+
+        <!-- medium and large screen -->
+        <div
+          class="hidden sm:-mr-10 md:-mr-10 text-xl gap-x-12 sm:flex sm:bg-darkBg sm:backdrop-blur-md sm:p-8 sm:pr-20">
+          <a href="index.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">00</span>
+            Home</a>
+          <a href="destination-moon.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">01</span> Destination
+          </a>
+          <a href="crew-commander.html" class="text-darkGrayishBlue "><span
+              class="aria-hidden text-white sm:hidden md:inline-block">02</span>
+            Crew
+
+          </a>
+          <a href="#" class="text-darkGrayishBlue active"><span
+              class="aria-hidden text-white sm:hidden md:inline-block">03</span>
+            Technology
+          </a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <p
+      class="w-30 text-darkGrayishBlue uppercase text-xl flex justify-center translate-y-6 md:translate-y-14 sm:justify-start sm:ml-10 md:ml-32 md:text-3xl">
+      <span class="text-darkBlue pr-4">03</span>
+      Space launch 101
+    </p>
+
+
+    <div class="flex flex-col mx-30 my-10 translate-y-6 sm:mt-2 sm:mb-0  md:flex-row-reverse md:ml-36 md:my-20  ">
+
+      <!-- IMAGE -->
+      <div class="flex justify-center sm:mt-10 md:justify-end md:w-3/12">
+        <img src="assets/technology/image-spaceport-portrait.jpg" class="techImage hidden sm:hidden md:flex"
+          alt="image-spaceport">
+        <img src="assets/technology/image-spaceport-landscape.jpg" class=" md:hidden" alt="image-spaceport">
+      </div>
+
+
+      <!-- TECHNOLOGY NAVIGATION LINKS -->
+      <div class="flex flex-col space-y-8 my-10 mt-6 sm:mt-20 sm:my-4 md:flex-row md:w-9/12  ">
+
+        <!-- TECHNOLOGY MOBILE VIEW NAVIGATION -->
+
+        <ul class="flex gap-x-4 justify-center tech-pagination-circular md:gap-x-0 md:gap-y-10 md:flex-col"
+          role="navigation" aria-label="Pagination">
+
+          <li><a href="technology-vehicle.html" class=" " aria-label="tech-nav-1">1</a></li>
+          <li><a href="technology-spaceport.html" class=" current" aria-label="tech-nav-2">2</a></li>
+          <li><a href="technology-capsule.html" class="  " aria-label="tech-nav-3">3</a></li>
+
+        </ul>
+
+
+        <div class="flex flex-col items-center space-y-4
+        md:items-start md:translate-y-10 sm:space-y-8 md:ml-20 container mx-auto ">
+
+          <div class="flex flex-col space-y-2 container mx-auto md:space-y-4 ">
+            <h2 class="text-md uppercase text-darkBlue flex justify-center md:justify-start md:text-3xl">The
+              terminology...
+            </h2>
+
+            <h1 class="text-white uppercase font-bellefair text-2xl mx-auto sm:text-5xl md:mx-0 md:text-5xl md:w-full ">
+              Spaceport
+            </h1>
+          </div>
+
+
+          <p class=" text-md text-center text-darkGrayishBlue px-8 sm:text-md
+          md:px-0 md:text-left md:w-2/3">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+            by analogy to the seaport for ships or airport for aircraft. Based in the
+            famous Cape Canaveral, our spaceport is ideally situated to take advantage
+            of the Earth's rotation for launch.
+          </p>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
 </body>
+
+
 </html>

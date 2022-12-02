@@ -25,6 +25,10 @@ body {
     background-image: url("../public/assets/crew/background-crew-mobile.jpg");
 }
 
+.techBody {
+    background-image: url("../public/assets/technology/background-technology-mobile.jpg");
+}
+
 /* links */
 
 
@@ -60,7 +64,7 @@ nav a:hover {
 
 .home-button:hover {
     outline: 50px solid #ffffff00;
-    transition: 2s ease;
+    transition: 2s ease-in-out;
 }
 
 .home-button p {
@@ -72,12 +76,9 @@ nav a:hover {
 
 }
 
+/* CREW PAGINATION LINKS */
 
-.pagination-circular li .current {
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 0.01rem 0.5rem;
-}
+
 
 /* .pagination-circular li.disabled {
     border: 1px solid #cacaca;
@@ -93,8 +94,14 @@ nav a:hover {
     font-size: 12px;
 }
 
+.pagination-circular li .current {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0.01rem 0.5rem;
+}
+
 .pagination-circular li:not(.disabled):hover a {
-    background: #1779ba;
+    background: #fff;
     /* color: #fefefe; */
 }
 
@@ -102,6 +109,21 @@ nav a:hover {
     transition: background 0.15s ease-in, color 0.15s ease-in;
 }
 
+/* TECH PAGINATION LINK */
+
+
+.tech-pagination-circular a {
+    border-radius: 2rem;
+    padding: 0.4rem 0.9rem;
+    outline: 1px solid white;
+    font-size: 20px;
+
+}
+
+.tech-pagination-circular li .current {
+    background-color: #fff;
+    color: #0b0d17;
+}
 
 .crew-image-line {
     border-color: rgb(172, 172, 172);
@@ -121,30 +143,17 @@ nav a:hover {
     margin-top: 2rem;
 }
 
+.techImage {
+    -o-object-fit: fill;
+    object-fit: fill;
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-height: 60vh;
+    min-height: 60vh;
+    max-width: 30vw;
 }
 
 
 
-/* target the active bullet */
-span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: hsl(12, 88%, 59%);
-    opacity: 1;
-}
 
 
 
@@ -165,7 +174,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-image: url("../public/assets/crew/background-crew-tablet.jpg");
     }
 
-
+    .techBody {
+        background-image: url("../public/assets/technology/background-technology-tablet.jpg");
+    }
 }
 
 /* @media (max-width:976px) {
@@ -190,6 +201,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-image: url("../public/assets/crew/background-crew-desktop.jpg");
     }
 
-
+    .techBody {
+        background-image: url("../public/assets/technology/background-technology-desktop.jpg");
+    }
 
 }
