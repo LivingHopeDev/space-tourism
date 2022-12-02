@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Bellefair&display=swap');
+
+body {
+    background-repeat: no-repeat;
+    background-position: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: hsl(231, 77%, 90%);
+}
+
+.homeBody {
+    background-image: url("../public/assets/home/background-home-mobile.jpg");
+
+}
+
+.destinationBody {
+    background-image: url("../public/assets/destination/background-destination-mobile.jpg");
+
+}
+
+.crewBody {
+    background-image: url("../public/assets/crew/background-crew-mobile.jpg");
+}
+
+/* links */
+
+
+
+.active {
+    border-bottom: 3px solid white;
+}
+
+/* NAVIGATION */
+.nav {
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+}
+
+.nav[data-visible="true"] {
+    transform: translateX(0%);
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+
+}
+
+
+
+.home-button {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: white;
+    margin-right: 5vw;
+}
+
+.home-button:hover {
+    outline: 50px solid #ffffff00;
+    transition: 2s ease;
+}
+
+.home-button p {
+
+    text-align: center;
+    line-height: 250px;
+    font-size: 32px;
+    color: #0b0d17;
+
+}
+
+
+.pagination-circular li .current {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0.01rem 0.5rem;
+}
+
+/* .pagination-circular li.disabled {
+    border: 1px solid #cacaca;
+    padding: 0.285em 0.8em;
+    border-radius: 5000px;
+    font-size: 18px;
+} */
+
+.pagination-circular a {
+    border-radius: 1rem;
+    padding: 0.01rem 0.5rem;
+    outline: none;
+    font-size: 12px;
+}
+
+.pagination-circular li:not(.disabled):hover a {
+    background: #1779ba;
+    /* color: #fefefe; */
+}
+
+.pagination-circular li a {
+    transition: background 0.15s ease-in, color 0.15s ease-in;
+}
+
+
+.crew-image-line {
+    border-color: rgb(172, 172, 172);
+    width: 300px;
+    margin: auto;
+    margin-top: -0vh;
+}
+
+
+.long-text:after {
+    display: block;
+    height: 1px;
+    content: " ";
+    width: 100%;
+    margin: 0 auto;
+    background-color: hsl(230, 30%, 40%);
+    margin-top: 2rem;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: hsl(12, 88%, 59%);
+    opacity: 1;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:768px) {
+    .homeBody {
+        background-image: url("../public/assets/home/background-home-tablet.jpg");
+
+    }
+
+    .destinationBody {
+        background-image: url("../public/assets/destination/background-destination-tablet.jpg");
+    }
+
+    .crewBody {
+        background-image: url("../public/assets/crew/background-crew-tablet.jpg");
+    }
+
+
+}
+
+/* @media (max-width:976px) {
+    body {
+        background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
+
+    }
+} */
+
+@media (max-width:1440px) {
+    .homeBody {
+        background-image: url("../public/assets/home/background-home-desktop.jpg");
+
+    }
+
+    .destinationBody {
+        background-image: url("../public/assets/destination/background-destination-desktop.jpg");
+
+    }
+
+    .crewBody {
+        background-image: url("../public/assets/crew/background-crew-desktop.jpg");
+    }
+
+
+
+}

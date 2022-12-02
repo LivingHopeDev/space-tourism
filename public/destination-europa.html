@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body class="destinationBody">
+
+  <header>
+    <nav class="relative mx-auto px-8 mt-6 md:mt-10">
+      <div class="flex justify-between">
+        <!-- logo -->
+        <div class="flex items-center">
+          <img src="assets/shared/logo.svg" class="bg-white rounded-full" alt="logo">
+        </div>
+        <!-- mobile menu -->
+        <div class="fixed navToggle text-white top-8 right-10 z-50 sm:hidden md:hidden" aria-expanded="false">
+          <img src="./assets/shared/icon-hamburger.svg" alt="open-icon" class="open" onclick="hidOpenIcon()">
+          <img src="./assets/shared/icon-close.svg" alt="close-icon" class="close hidden" onclick="hidCloseIcon()">
+
+        </div>
+
+        <div
+          class="fixed nav text-xl flex flex-col top-0 bottom-0 right-0 left-18 pt-48 pr-32 pl-10 gap-y-8 bg-darkBg backdrop-blur-md z-40 sm:hidden md:hidden"
+          data-visible="false">
+          <a href="index.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">00</span>
+            Home</a>
+          <a href="destination-moon.html" class="text-darkGrayishBlue active">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">01</span> Destination
+          </a>
+          <a href="crew-commander.html" class="text-darkGrayishBlue "><span
+              class="aria-hidden text-white sm:hidden md:inline-block">02</span>
+            Crew
+
+          </a>
+          <a href="#" class="text-darkGrayishBlue"><span
+              class="aria-hidden text-white sm:hidden md:inline-block">03</span>
+            Technology
+          </a>
+
+        </div>
+
+        <!-- medium and large screen -->
+        <div
+          class="hidden sm:-mr-10 md:-mr-10 text-xl gap-x-12 sm:flex sm:bg-darkBg sm:backdrop-blur-md sm:p-8 sm:pr-20">
+          <a href="index.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">00</span>
+            Home</a>
+
+          <a href="destination-moon.html" class="text-darkGrayishBlue active">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">01</span> Destination
+          </a>
+          <a href="crew-commander.html" class="text-darkGrayishBlue "><span
+              class="aria-hidden text-white sm:hidden md:inline-block">02</span>
+            Crew
+
+          </a>
+          <a href="#" class="text-darkGrayishBlue"><span
+              class="aria-hidden text-white sm:hidden md:inline-block">03</span>
+            Technology
+          </a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <p
+      class="w-30 text-darkGrayishBlue text-xl flex justify-center translate-y-6 sm:justify-start sm:ml-10 md:ml-32 md:text-3xl">
+      <span class="text-darkBlue pr-4">01</span>
+      PICK
+      YOUR
+      DESTINATION
+    </p>
+
+    <div class="flex flex-col mx-30 space-y-8 my-12 sm:my-20 md:flex-row md:my-20 md:gap-x-12 md:container md:mx-auto">
+
+      <div class="flex justify-center md:ml-36 md:translate-y-24  md:-translate-x-20">
+        <img src="assets/destination/image-europa.png" class="w-44 h-44 md:h-96 md:w-96 " alt="Europa">
+
+      </div>
+
+      <div class="flex flex-col items-center space-y-4 md:items-start md:space-y-8">
+
+        <ul class="flex gap-4 text-darkGrayishBlue">
+          <li class="hover:text-white hover:border-b-2 "><a href="destination-moon.html">MOON</a> </li>
+          <li class="hover:text-white hover:border-b-2 "><a href="destination-mars.html">MARS</a> </li>
+          <li class="hover:text-white hover:border-b-2 active"><a href="destination-europa.html">EUROPA</a> </li>
+          <li class="hover:text-white hover:border-b-2 "><a href="destination-titan.html">TITAN</a> </li>
+
+
+        </ul>
+
+        <h1 class="text-white text-6xl mx-auto sm:text-9xl md:mx-0 md:text-7xl md:w-full font-bellefair ">EUROPA</h1>
+        <p class="long-text text-xl text-center text-darkGrayishBlue px-8 md:px-0 md:text-left md:w-96">The smallest of
+          the four Galilean moons orbiting Jupiter, Europa is a
+          winter lover's dream. With an icy surface, it's perfect for a bit of
+          ice skating, curling, hockey, or simple relaxation in your snug
+          wintery cabin.wo and a half times
+          the size of Everest!
+        </p>
+        <div class="flex flex-col space-y-6 sm:gap-10 sm:space-y-0 md:space-y-0 sm:flex-row md:flex-row md:space-x-16">
+          <div class="flex flex-col items-center">
+            <p class="text-sm ">AVG. DISTANCE</p>
+            <h2 class="text-3xl">628 mil. km
+
+            </h2>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="text-sm">EST. TRAVEL TIME</p>
+            <h2 class=" text-3xl">3 years</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</body>
+
+</html>

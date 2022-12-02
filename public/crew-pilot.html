@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <script src="js/script.js" defer></script>
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body class="crewBody">
+
+  <header>
+    <nav class="relative mx-auto px-8 mt-6 md:mt-10">
+      <div class="flex justify-between">
+        <!-- logo -->
+        <div class="flex items-center">
+          <img src="assets/shared/logo.svg" class="bg-white rounded-full" alt="logo">
+        </div>
+        <!-- mobile menu -->
+        <div class="fixed navToggle text-white top-8 right-10 z-50 sm:hidden md:hidden" aria-expanded="false">
+          <img src="./assets/shared/icon-hamburger.svg" alt="open-icon" class="open" onclick="hidOpenIcon()">
+          <img src="./assets/shared/icon-close.svg" alt="close-icon" class="close hidden" onclick="hidCloseIcon()">
+
+        </div>
+
+        <div
+          class="fixed nav text-xl flex flex-col top-0 bottom-0 right-0 left-18 pt-48 pr-32 pl-10 gap-y-8 bg-darkBg backdrop-blur-md z-40 sm:hidden md:hidden"
+          data-visible="false">
+          <a href="index.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">00</span>
+            Home</a>
+          <a href="destination-moon.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">01</span> Destination
+          </a>
+          <a href="crew-commander.html" class="text-darkGrayishBlue active"><span
+              class="aria-hidden text-white sm:hidden md:inline-block">02</span>
+            Crew
+
+          </a>
+          <a href="#" class="text-darkGrayishBlue"><span
+              class="aria-hidden text-white sm:hidden md:inline-block">03</span>
+            Technology
+          </a>
+
+        </div>
+
+        <!-- medium and large screen -->
+        <div
+          class="hidden sm:-mr-10 md:-mr-10 text-xl gap-x-12 sm:flex sm:bg-darkBg sm:backdrop-blur-md sm:p-8 sm:pr-20">
+          <a href="index.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">00</span>
+            Home</a>
+
+          <a href="destination-moon.html" class="text-darkGrayishBlue">
+            <span class="aria-hidden text-white sm:hidden md:inline-block">01</span> Destination
+          </a>
+          <a href="crew-commander.html" class="text-darkGrayishBlue active"><span
+              class="aria-hidden text-white sm:hidden md:inline-block">02</span>
+            Crew
+
+          </a>
+          <a href="#" class="text-darkGrayishBlue"><span
+              class="aria-hidden text-white sm:hidden md:inline-block">03</span>
+            Technology
+          </a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <p
+      class="w-30 text-darkGrayishBlue text-xl flex justify-center translate-y-8 md:translate-y- sm:justify-start sm:ml-10 md:ml-32 md:text-3xl">
+      <span class="text-darkBlue pr-4">02</span>
+      MEET YOUR CREW
+    </p>
+
+
+    <div
+      class="flex flex-col mx-30 my-12 sm:flex-col-reverse sm:mt-4 sm:mb-0 md:flex-row-reverse md:my-0 details-container">
+
+      <div class="flex justify-center md:ml-20  md:-translate-x-28 md:w-6/12 md:translate-y-8">
+        <img src="assets/crew/image-victor-glover.png" class="w-44 sm:w-60 md:w-96 " alt="victor-glover">
+      </div>
+
+      <hr class="crew-image-line sm:hidden md:hidden">
+
+      <!-- CREW NAVIGATION LINKS -->
+      <!--  -->
+      <div class="flex-col space-y-6 my-6 md:w-6/12 ">
+        <!-- CREW MOBILE VIEW NAVIGATION -->
+
+        <ul class="flex gap-x-4 justify-center pagination pagination-circular sm:hidden md:hidden" role="navigation"
+          aria-label="Pagination">
+
+          <li><a href="crew-commander.html" class="bg-darkBlue " aria-label="crew-nav-1"></a></li>
+          <li><a href="crew-specialist.html" class="bg-darkBlue " aria-label="crew-nav-2"></a></li>
+          <li><a href="crew-pilot.html" class="bg-darkBlue current " aria-label="crew-nav-3"></a></li>
+          <li><a href="crew-engineer.html" class="bg-darkBlue " aria-label="crew-nav-4"></a></li>
+
+        </ul>
+
+
+        <div class="flex flex-col items-center space-y-6
+        md:items-start md:translate-y-10 md:space-y-8 md:ml-32">
+
+          <div class="flex flex-col container mx-auto md:space-y-4 ">
+            <h2 class="text-3xl uppercase text-darkBlue flex justify-center md:justify-start md:text-3xl">Pilot</h2>
+
+            <h1 class="font-bellefair uppercase text-white text-4xl mx-auto sm:text-5xl md:mx-0 md:text-6xl md:w-full ">
+              Victor Glover
+            </h1>
+          </div>
+
+
+          <p class=" text-xl text-center text-darkGrayishBlue px-8 sm:text-md
+          md:px-0 md:text-left md:w-2/3">Pilot on the first operational flight of the SpaceX Crew Dragon to the
+            International Space Station. Glover is a commander in the U.S. Navy where
+            he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+            station systems flight engineer.
+          </p>
+
+          <!-- CREW TABLET AND DESKTOP NAVIGATION -->
+          <ul class="hidden  gap-x-4 justify-center pagination pagination-circular sm:flex md:flex md:mt-32"
+            role="navigation" aria-label="Pagination">
+
+            <li><a href="crew-commander.html" class="bg-darkBlue " aria-label="crew-nav-1"></a></li>
+            <li><a href="crew-specialist.html" class="bg-darkBlue " aria-label="crew-nav-2"></a></li>
+            <li><a href="crew-pilot.html" class="bg-darkBlue current " aria-label="crew-nav-3"></a></li>
+            <li><a href="crew-engineer.html" class="bg-darkBlue " aria-label="crew-nav-4"></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+</body>
+
+
+</html>
